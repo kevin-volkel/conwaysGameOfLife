@@ -223,8 +223,8 @@ canvas.addEventListener("mousedown", createLife)
 clearButton.addEventListener("click", clearGrid)
 playButton.addEventListener("click", play)
 
-//give the settings on change events to updateSettings
-document.getElementById("underLimit").addEventListener("change", updateSettings);
-document.getElementById("overLimit").addEventListener("change", updateSettings);
-document.getElementById("birthLimit").addEventListener("change", updateSettings);
-document.getElementById("speed").addEventListener("change", updateSpeed);
+//give the settings onInput events to updateSettings
+document.getElementById("underLimit").addEventListener("input", updateSettings);
+document.getElementById("overLimit").addEventListener("input", updateSettings);
+document.getElementById("birthLimit").addEventListener("input", updateSettings);
+document.getElementById("speed").addEventListener("input", updateSpeed);

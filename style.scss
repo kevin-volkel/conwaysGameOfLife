@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
-html{
-    background: #02C6F7;
+body{
+    height: 101vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #0399a3, rgb(24, 56, 199));
 }
 
 .container{
@@ -26,7 +28,9 @@ canvas{
 }
 
 .buttonContainer{
-    background-color: green;
+    background: linear-gradient(to left, #da6403, rgb(138, 60, 9));
+    border: 1px solid black;
+    border-radius: 12px;
     width: 300px;
     height: 400px;
     margin: auto;
@@ -41,7 +45,11 @@ canvas{
 }
 
 .settingsContainer{
-    background-color: green;
+    padding-left: 5px;
+    background: linear-gradient(to right, #da6403, rgb(138, 60, 9));
+
+    border: 1px solid black;
+    border-radius: 12px;
     width: 300px;
     height: 400px;
     margin: auto;
@@ -58,6 +66,28 @@ canvas{
 
     label{
         color: white;
+    }
+
+    .setting input#speed{
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        opacity: 0.7;
+        transition: all 0.5s;
+
+        &:hover{
+            opacity: 1;
+        }
+
+        &::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            appearance: none;
+            width: 10px;
+            height: 10px;
+            margin: 1px;
+            border-radius: 50%;
+            background: black;
+        }
     }
     
 }
