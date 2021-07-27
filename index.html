@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8';>
+    <meta name='author' content='Kevin Volkel'>
+    <meta name='description' content=''>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <meta name='og:title' content=''>
+    <meta name='og:description' content=''>
+    <meta name='og:image' content=''>
+
+    <title>Conway's Game of Life</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='shortcut icon' href='' type='image/x-icon'>
+</head>
+<body>
+    <div class="container">
+        <div class="buttonContainer">
+            <button id="play">Play</button>
+            <button id="step">Step</button>
+            <button id="clear">Clear</button>
+            <p id="stepNum">Step 0</p>
+        </div> 
+    
+        <div class="canvasContainer">
+            <canvas id="game" width="600" height="600" style="border: 1px solid black"></canvas>
+        </div>
+
+        <div class="settingsContainer">
+            <div class="settingsTitle">Settings</div>
+            <div class="setting">
+                <label for="overLimit">Overpopulation Limit: </label>
+                <input type="number" id="overLimit" min="1" max="8" value="4">
+            </div>
+            <div class="setting">
+                <label for="underLimit">Underpopulation Limit: </label>
+                <input type="number" id="underLimit" min="1" max="8" value="1">
+            </div>
+            <div class="setting">
+                <label for="birthLimit">Birth Limit: </label>
+                <input type="number" id="birthLimit" min="1" max="8" value="3">
+            </div>
+            <div class="setting">
+                <label for="speed">Speed: </label>
+                <input type="range" id="speed" min="1" max="2000" value="1000">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
