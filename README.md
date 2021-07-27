@@ -1,5 +1,5 @@
 #  Conway's Game of Life
-## A version of Conway's Game of Life with customizable conditions
+## A version of Conway's Game of Life with customizable rules
 
 ### Rules of Conway's Game of Life:
 - At every step a living cell will die if the amount of neighbors are:
